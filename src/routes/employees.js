@@ -5,7 +5,6 @@ const Employee = require('../models/Employee');
 router.get('/', async (req, res) => {
     const employees = await Employee.find();
     res.json(employees);
-    //res.send('API tasks is goes here')
 })
 
 router.post('/', async (req, res) => {
@@ -16,12 +15,12 @@ router.post('/', async (req, res) => {
     })
 })
 
-router.put('/:id', async (req, res) => {
+/*router.put('/:id', async (req, res) => {
     await Employee.findByIdAndUpdate(req.params.id, req.body)
     res.json({
         status: 'Employee Updated'
     })
-})
+})*/
 
 router.delete('/:id', async (req, res) => {
     await Employee.findByIdAndRemove (req.params.id)

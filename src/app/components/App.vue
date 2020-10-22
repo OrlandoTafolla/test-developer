@@ -100,7 +100,7 @@ export default {
             })
             .then(res => res.json())
             .then(data => {
-                toastr.success('Empleado guardado','Orlando TEST');
+                toastr.success('Employee Saved!','Orlando TEST');
                 this.getEmployees();       
             })
 
@@ -125,6 +125,7 @@ export default {
             })
              .then(res => res.json())
              .then(data => {
+                  toastr.error('Employee Deleted','Orlando TEST');
                 this.getEmployees();       
             }) 
         }
