@@ -1,0 +1,26 @@
+{
+  "name": "test-developer",
+  "version": "1.0.0",
+  "description": "Prueba Vue",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrlandoTafolla/test-developer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrlandoTafolla/test-developer/issues"
+  },
+  "homepage": "https://github.com/OrlandoTafolla/test-developer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "webpack": "^5.1.3"
+  }
+}
